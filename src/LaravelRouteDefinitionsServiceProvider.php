@@ -2,9 +2,9 @@
 
 namespace SaasLaravel\LaravelRouteDefinitions;
 
+use SaasLaravel\LaravelRouteDefinitions\Commands\LaravelRouteDefinitionsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use SaasLaravel\LaravelRouteDefinitions\Commands\LaravelRouteDefinitionsCommand;
 
 class LaravelRouteDefinitionsServiceProvider extends PackageServiceProvider
 {
