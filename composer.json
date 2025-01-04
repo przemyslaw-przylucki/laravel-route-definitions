@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "przemyslaw-przylucki/laravel-route-definitions",
+    "description": "Package that parses all of your routes, and assigns them the data in and data out definitions",
     "keywords": [
-        ":vendor_name",
+        "przemyslaw-przylucki",
         "laravel",
-        ":package_slug"
+        "laravel-route-definitions"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/przemyslaw-przylucki/laravel-route-definitions",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Przemysław Przyłucki",
+            "email": "hello@przemyslawprzylucki.com",
             "role": "Developer"
         }
     ],
@@ -30,18 +30,17 @@
         "pestphp/pest-plugin-laravel": "^3.0",
         "phpstan/extension-installer": "^1.3",
         "phpstan/phpstan-deprecation-rules": "^1.1",
-        "phpstan/phpstan-phpunit": "^1.3",
-        "spatie/laravel-ray": "^1.35"
+        "phpstan/phpstan-phpunit": "^1.3"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "SaasLaravel\\LaravelRouteDefinitions\\": "src/",
+            "SaasLaravel\\LaravelRouteDefinitions\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "SaasLaravel\\LaravelRouteDefinitions\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "SaasLaravel\\LaravelRouteDefinitions\\LaravelRouteDefinitionsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelRouteDefinitions": "SaasLaravel\\LaravelRouteDefinitions\\Facades\\LaravelRouteDefinitions"
             }
         }
     },

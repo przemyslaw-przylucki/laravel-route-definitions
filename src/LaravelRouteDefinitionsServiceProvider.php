@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace SaasLaravel\LaravelRouteDefinitions;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use SaasLaravel\LaravelRouteDefinitions\Commands\LaravelRouteDefinitionsCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelRouteDefinitionsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-route-definitions')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel_route_definitions_table')
+            ->hasCommand(LaravelRouteDefinitionsCommand::class);
     }
 }
